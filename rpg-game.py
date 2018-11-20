@@ -15,6 +15,8 @@ class Goblin:
     def _init__ (self, health, power)
         self.health = health
         self.power = power
+    def attack(self, enemy):
+        hero.health() -= goblin.power()
 
 hero = Hero(10, 5)
 goblin = Goblin(6, 2)
