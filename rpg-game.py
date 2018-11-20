@@ -8,11 +8,16 @@ class Hero:
     def __init__ (self, health, power)
         self.health = health
         self.power = power
+    def attack(self, enemy):
+        goblin.health() -= hero.power()
+
 class Goblin:
     def _init__ (self, health, power)
         self.health = health
         self.power = power
 
+hero = Hero(10, 5)
+goblin = Goblin(6, 2)
 
 # # ORIGINAL CODE:      
 # def main():
