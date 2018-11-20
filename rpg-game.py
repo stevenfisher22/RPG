@@ -11,6 +11,8 @@ class Hero:
         self.alive = health > 0
     def attack(self, enemy):
         goblin.health() -= hero.power()
+    def print_status(self):
+        print(hero.health)
     while goblin.alive() and hero.alive():
         print(f"You have {hero.health} health and {hero.power} power.")
         print(f"The goblin has {goblin.health} health and {goblin.power} power.")
@@ -49,6 +51,8 @@ class Goblin:
         self.alive = health > 0
     def attack(self, enemy):
         hero.health() -= goblin.power()
+    def print_status(self):
+        print(goblin.health)
 
 hero = Hero(10, 5)
 goblin = Goblin(6, 2)
